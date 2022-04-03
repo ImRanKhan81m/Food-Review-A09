@@ -4,7 +4,7 @@ import './App.css';
 import About from './Components/About/About';
 import Blog from './Components/Blogs/Blog';
 import Dashboard from './Components/Dashboard/Dashboard';
-import Footer from './Components/Footer/Footer';
+// import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import NotFound from './Components/NotFound/NotFound';
@@ -23,7 +23,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }
