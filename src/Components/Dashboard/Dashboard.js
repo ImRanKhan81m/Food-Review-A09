@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-import { Line, LineChart } from 'recharts';
+import { Line, LineChart, XAxis, YAxis } from 'recharts';
 
 const Dashboard = () => {
 
@@ -47,11 +47,18 @@ const Dashboard = () => {
 
             <div className="container">
                 <Row>
-                    <Col>
-                        <LineChart width={400} height={500} data={data}>
-                            <Line dataKey={'investment'}>
-
-                            </Line>
+                    <Col lg='12'>
+                        <LineChart width={800} height={500} data={data}>
+                            <Line dataKey={'investment'}></Line>
+                            <XAxis dataKey={'month'}></XAxis>
+                            <YAxis></YAxis>
+                        </LineChart>
+                    </Col>
+                    <Col lg='6'>
+                        <LineChart width={800} height={500} data={data}>
+                            <Line dataKey={'investment'}></Line>
+                            <XAxis dataKey={'month'}></XAxis>
+                            <YAxis></YAxis>
                         </LineChart>
                     </Col>
                 </Row>
