@@ -5,6 +5,7 @@ import image from '../Assets/images/home-img-2.png'
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+
     const navigate = useNavigate();
     return (
         <>
