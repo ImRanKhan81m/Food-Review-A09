@@ -1,6 +1,7 @@
+
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-import { Line, LineChart, XAxis, YAxis } from 'recharts';
+import { Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Dashboard = () => {
 
@@ -46,22 +47,29 @@ const Dashboard = () => {
         <div>
 
             <div className="container">
-                <Row>
-                    <Col lg='12'>
-                        <LineChart width={800} height={500} data={data}>
-                            <Line dataKey={'investment'}></Line>
-                            <XAxis dataKey={'month'}></XAxis>
-                            <YAxis></YAxis>
-                        </LineChart>
-                    </Col>
-                    <Col lg='6'>
-                        <LineChart width={800} height={500} data={data}>
-                            <Line dataKey={'investment'}></Line>
-                            <XAxis dataKey={'month'}></XAxis>
-                            <YAxis></YAxis>
-                        </LineChart>
-                    </Col>
-                </Row>
+                <div className="chart-container py-5 mt-3">
+                    <Row>
+                        <Col >
+                            <h2 className='text-center mb-5'>Investment VS Revenue </h2>
+                            <LineChart width={600} height={400} data={data}>
+                                <Line dataKey={'investment'}></Line>
+                                <Line dataKey={'sell'}></Line>
+                                <XAxis dataKey={'month'}></XAxis>
+                                <Tooltip/>
+                                <YAxis></YAxis>
+                            </LineChart>
+                        </Col>
+                        <Col >
+                            <h2 className='text-center mb-5'>Investment VS Revenue </h2>
+                            <LineChart width={600} height={400} data={data}>
+                                <Line dataKey={'investment'}></Line>
+                                <Line dataKey={'sell'} stroke={'green'}></Line>
+                                <XAxis dataKey={'month'}></XAxis>
+                                <YAxis></YAxis>
+                            </LineChart>
+                        </Col>
+                    </Row>
+                </div>
             </div>
         </div>
     );
