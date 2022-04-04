@@ -6,3 +6,13 @@
 h2{
     color: #192a56;
 }
+@media only screen and (max-width: 780px) {
+    .reviews{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 500px) {
+    .reviews{
+        grid-template-columns: 1fr;
+    }
+}

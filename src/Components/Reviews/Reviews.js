@@ -8,8 +8,8 @@ const Reviews = () => {
     return (
         <div>
             <div className="container text-center mt-5">
-                <h2>What out Customers say!!</h2>
-                <div className='reviews py-5 mt-2'>
+                <h2><b>What Our Customers Say!!</b></h2>
+                <div className='reviews py-3 mt-2'>
                     {
                         reviews.map(review => <ReviewAll
                             key={review._id}
