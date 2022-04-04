@@ -3,8 +3,12 @@ import { Col, Container, Row } from 'react-bootstrap';
 import './Home.css'
 import image from '../Assets/images/home-img-2.png'
 import { useNavigate } from 'react-router-dom';
+import useReviews from '../../hooks/useReviews';
+import CustomReview from '../CustomReview/CustomReview';
 
 const Home = () => {
+    const [reviews] = useReviews();
+    const customReview = reviews.slice(0,3);
 
     const navigate = useNavigate();
     return (
@@ -28,6 +32,18 @@ const Home = () => {
                             </Col>
                         </Row>
                     </Container>
+                </section>
+                <section>
+                    <div className="container text-center">
+                        <h1>Customer Reviews: {customReview.length}</h1>
+                        <div className='reviews mt-5'>
+                            {
+                                customReview.map(review => <CustomReview
+                                    key={review._id}
+                                    review={review}></CustomReview>)
+                            }
+                        </div>
+                    </div>
                 </section>
             </div>
         </>
