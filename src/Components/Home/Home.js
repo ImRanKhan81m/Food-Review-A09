@@ -21,7 +21,7 @@ const Home = () => {
                                 <div className='home-details'>
                                     <p><span>Our Special Dish</span></p>
                                     <h1>Fried Chicken</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem similique dicta praesentium asperiores.</p>
+                                    <p>Fried chicken, also known as Southern fried chicken, is a dish consisting of chicken pieces that have been coated with seasoned flour or batter and pan-fried, deep fried, pressure fried, or air fried.</p>
                                     <button onClick={() => navigate('/about')}>Recife</button>
                                 </div>
                             </Col>
