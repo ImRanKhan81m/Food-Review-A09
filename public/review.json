@@ -1,7 +1,7 @@
 [
     {
       "_id": "624a690ed3d885aa83b35b5b",
-      "rating": "***",
+      "rating": 4,
       "name": "Sophia Franklin",
       "about": "Delicious- true southern fried chicken with the right spices to be gentle to you also adding you own- the flavor is great- tastes like my moms chicken.",
       "img":"./images/pic-1.png"
@@ -22,14 +22,14 @@
     },
     {
       "_id": "624a690e3f4c250c99e06c0e",
-      "rating": 3,
+      "rating": 4,
       "name": "Orr Franks",
       "about": "sylvia's is easy to use and just delicious… you can just wet the chicken and throw it in a baggie with the seasoning and shake and fry or put in your air fryer.. easy.",
       "img":"./images/pic-4.png"
     },
     {
       "_id": "624a690e3d626a8c132f0ad7",
-      "rating": 4,
+      "rating": 3,
       "name": "Molly Pugh",
       "about": "I have to say that it gave a nice crispy crunch. Like some other reviewers have noted it is a bit on the hot side. It appears to have a nice flavor but it honestly is hard to tell for sure because the saltiness overwhelms everything else.",
       "img":"./images/pic-5.png"
