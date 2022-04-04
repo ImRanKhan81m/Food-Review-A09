@@ -10,8 +10,8 @@ const ReviewAll = (props) => {
             <div className='review-all'>
                 <img src={img} alt="" />
                 <p><small>{about}</small></p>
-                <h3>{name}</h3>
-                <p>{rating >=4 ? <span><FontAwesomeIcon className='rating-star' icon={faStar}/><FontAwesomeIcon className='rating-star' icon={faStar}/><FontAwesomeIcon className='rating-star' icon={faStar}/><FontAwesomeIcon className='rating-star' icon={faStar}/><FontAwesomeIcon className='rating-star' icon={faStar}/></span> : <span><FontAwesomeIcon className='rating-star' icon={faStar}/><FontAwesomeIcon className='rating-star' icon={faStar}/><FontAwesomeIcon className='rating-star' icon={faStar}/></span> }</p>
+                <h4>{name}</h4>
+                <h6>{rating >=4 ? <span><FontAwesomeIcon className='rating-star' icon={faStar}/><FontAwesomeIcon className='rating-star' icon={faStar}/><FontAwesomeIcon className='rating-star' icon={faStar}/><FontAwesomeIcon className='rating-star' icon={faStar}/><FontAwesomeIcon className='rating-star' icon={faStar}/></span> : <span><FontAwesomeIcon className='rating-star' icon={faStar}/><FontAwesomeIcon className='rating-star' icon={faStar}/><FontAwesomeIcon className='rating-star' icon={faStar}/></span> }</h6>
             </div>
         </div>
     );

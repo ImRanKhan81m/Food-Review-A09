@@ -1,7 +1,22 @@
+.review-all{
+    background-color:rgba(240, 248, 255, 0.288);
+    padding: 20px;
+    box-shadow: 0 2px 4px 1px rgb(27 27 27 / 10%);
+    margin-bottom: 23px;
+    border: 1px solid rgba(19,19,19,.125);
+    border-radius: 20px;
+}
 .review-all img{
     width: 30%;
     border-radius: 50%;
 }
 .review-all p{
     height: 100px;
+    margin-top: 15px;
+}
+.review-all h4{
+    color: #192a56;
+}
+.rating-star{
+    color: #27ae60;
 }
