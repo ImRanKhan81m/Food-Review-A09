@@ -2,7 +2,7 @@ section {
     padding-top: 80px;
     margin-bottom: 30px;
     padding-left: 20px;
-    padding-right: 20px;  
+    padding-right: 20px;
 }
 
 .home-details span {
@@ -40,7 +40,8 @@ section {
     width: 100%;
     margin: auto;
 }
-.review-items button{
+
+.review-items button {
     border: none;
     background-color: #192a56;
     font-size: 1.3rem;
@@ -48,4 +49,86 @@ section {
     border-radius: 0.5rem;
     cursor: pointer;
     padding: 0.7rem 2.3rem;
+}
+
+
+
+@media only screen and (max-width: 1090px) {
+    .home-details h1 {
+        font-size: 4rem;
+    }
+
+    .home-details p {
+        font-size: 1.2rem;
+        color: #666;
+    }
+
+    .home-details button {
+        font-size: 1.2rem;
+        padding: 0.7rem 2.3rem;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    section {
+        margin-bottom: 0px;
+    }
+
+    .home-details h1 {
+        font-size: 3rem;
+    }
+
+    .home-details span {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .home-details {
+        text-align: center;
+    }
+    section {
+        padding-top: 30px;
+    }
+    .home-details h1 {
+        font-size: 4rem;
+    }
+    .home-details p {
+        margin-bottom: 0;
+    }
+    .home-details span {
+        font-size: 1.7rem;
+    }
+    .home-details button {
+        font-size: 1.4rem;
+        padding: 0.7rem 3.3rem;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+    .img-container img {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .home-details h1 {
+        font-size: 3rem;
+    }
+    .home-details span {
+        font-size: 1.5rem;
+    }
+
+    .home-details p {
+        font-size: 1rem;
+        color: #666;
+    }
+
+    .home-details button {
+        font-size: 1rem;
+        padding: 0.7rem 2.3rem;
+        margin-bottom: 15px;
+    }
+    section{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
 }

@@ -17,7 +17,7 @@ const Home = () => {
                 <section>
                     <Container>
                         <Row>
-                            <Col lg='6' className='d-flex align-items-center'>
+                            <Col lg='6' md='6' className='d-flex align-items-center'>
                                 <div className='home-details'>
                                     <p><span>Our Special Dish</span></p>
                                     <h1>Fried Chicken</h1>
@@ -25,7 +25,7 @@ const Home = () => {
                                     <button onClick={() => navigate('/about')}>Recife</button>
                                 </div>
                             </Col>
-                            <Col lg='6' className='img-container'>
+                            <Col lg='6' md='6' className='img-container'>
                                 <div>
                                     <img src={image} alt="" />
                                 </div>
@@ -35,7 +35,7 @@ const Home = () => {
                 </section>
                 <section>
                     <div className="container text-center review-items">
-                        <h1>Customer Reviews: {customReview.length}</h1>
+                        <h1><b>Customer Reviews: {customReview.length}</b></h1>
                         <div className='reviews mt-5'>
                             {
                                 customReview.map(review => <CustomReview
