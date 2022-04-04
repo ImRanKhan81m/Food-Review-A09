@@ -17,7 +17,7 @@ const Home = () => {
                 <section>
                     <Container>
                         <Row>
-                            <Col lg='5' className='d-flex align-items-center'>
+                            <Col lg='6' className='d-flex align-items-center'>
                                 <div className='home-details'>
                                     <p><span>Our Special Dish</span></p>
                                     <h1>Fried Chicken</h1>
@@ -25,7 +25,7 @@ const Home = () => {
                                     <button onClick={() => navigate('/about')}>Recife</button>
                                 </div>
                             </Col>
-                            <Col lg='7' className='img-container'>
+                            <Col lg='6' className='img-container'>
                                 <div>
                                     <img src={image} alt="" />
                                 </div>
