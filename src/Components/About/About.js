@@ -11,9 +11,9 @@ const About = () => {
             <div className="container mt-5">
                 <Row>
                     <Col lg='6' md='12'>
-                        <div className="image-container">
+                        <div className="image-container px-0 px-md-3 px-lg-0">
                             <img src={image} alt="" />
-                            <h2 className='text-center mt-4'><b>Kentucky Fried Chicken</b></h2>
+                            <h1 className='text-center mt-4'><b>Kentucky Fried Chicken</b></h1>
                         </div>
                     </Col>
                     <Col lg='6' md='12'>
@@ -26,9 +26,9 @@ const About = () => {
                             <p><b>Ingredients:</b> Chicken, Oil, Egg White, Flour, Brown Sugar, Salt.</p>
                             <p><b>Measure:</b> 1 whole, 2 quarts neutral frying, 1 1/2 cups , 1 tablespoon, 1 tablespoon, 1 tablespoon, 2 teaspoons, 1 teaspoon.</p>
                             
-                            <div className='home-details mt-5 text-center'>
+                            <div className='home-details mt-5 text-center '>
                                 <a target='blank' href="https://www.youtube.com/watch?v=PTUxCvCz8Bc"><button  onClick={() => navigate('/about')}>See Tutorial</button></a>
-                                <button className='mx-5 mt-3'  onClick={() => navigate('/')}>Go Home</button>
+                                <button className='mx-5 mt-md-3 mt-0'  onClick={() => navigate('/')}>Go Home</button>
                             </div>
                         </div>
                     </Col>
