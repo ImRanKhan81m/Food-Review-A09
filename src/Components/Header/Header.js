@@ -9,7 +9,7 @@ const Header = () => {
         <div>
             <Navbar className='navBar shadow-sm' bg="light" expand="lg">
                 <Container className='container'>
-                    <Navbar.Brand><Link className='header' to={'/'}><h2>Food Review</h2></Link></Navbar.Brand>
+                    <Navbar.Brand><Link className='header' to={'/'}><h2><b>Food Review</b></h2></Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto items">

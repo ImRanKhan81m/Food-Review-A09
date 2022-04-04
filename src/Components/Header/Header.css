@@ -1,5 +1,5 @@
 .navBar {
-    padding: 10px 15px;
+    padding: 10px 15px !important;
 }
 
 .container{
@@ -12,7 +12,8 @@
 
 .items .item {
     margin-left: 23px;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 500;
     text-decoration: none;
 }
 .icon{
