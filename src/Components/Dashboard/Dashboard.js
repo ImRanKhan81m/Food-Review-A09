@@ -40,7 +40,7 @@ const Dashboard = () => {
                                 </LineChart>
                             </Col>
                             <Col >
-                                <h2 className='text-center mb-5'>Investment VS Revenue </h2>
+                                <h2 className='text-center mb-5'>Investment VS Sell </h2>
                                 <AreaChart
                                     width={600}
                                     height={400}
@@ -68,8 +68,8 @@ const Dashboard = () => {
                             <Col >
                                 <h2 className='text-center mb-5'>Investment VS Revenue </h2>
                                 <BarChart width={600} height={400} data={data}>
-                                    <Bar dataKey="investment" stackId="a" fill="#8884d8" />
-                                    <Bar dataKey="sell" stackId="a" fill="#82ca9d" />
+                                    <Bar dataKey="revenue" stackId="a" fill="#8884d8" />
+                                    <Bar dataKey="investment" stackId="a" fill="#82ca9d" />
                                     <XAxis dataKey={'month'}></XAxis>
                                     <Tooltip />
                                     <Legend />
@@ -78,7 +78,7 @@ const Dashboard = () => {
 
                             </Col>
                             <Col >
-                                <h2 className='text-center mb-5'>Investment VS Revenue </h2>
+                                <h2 className='text-center mb-5'>Investment VS Sell </h2>
                                 <PieChart width={600} height={400}>
                                     <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={90} fill="#8884d8" />
                                     <Pie data={data2} dataKey="sell" cx="50%" cy="50%" innerRadius={110} outerRadius={150} fill="#82ca9d" label />
