@@ -9,38 +9,38 @@ const Dashboard = () => {
     const data = [
         {
             month: "Mar",
-            investment: 1000,
-            sell: 241,
+            investment: 4000,
+            sell: 2400,
             revenue: 10401,
         },
         {
             month: "Apr",
-            investment: 2000,
-            sell: 423,
+            investment: 3000,
+            sell: 1398,
             revenue: 24500,
         },
         {
             month: "May",
-            investment: 5000,
-            sell: 726,
+            investment: 2000,
+            sell: 9800,
             revenue: 67010,
         },
         {
             month: "Jun",
-            investment: 5000,
-            sell: 529,
+            investment: 2780,
+            sell: 3908,
             revenue: 40405,
         },
         {
             month: "Jul",
-            investment: 6000,
-            sell: 601,
+            investment: 1890,
+            sell: 4800,
             revenue: 50900,
         },
         {
             month: "Aug",
-            investment: 7000,
-            sell: 670,
+            investment: 2390,
+            sell: 3800,
             revenue: 61000,
         },
     ];
@@ -54,8 +54,8 @@ const Dashboard = () => {
                             <Col >
                                 <h2 className='text-center mb-5'>Investment VS Revenue </h2>
                                 <LineChart width={600} height={400} data={data}>
-                                    <Line type={'monotone'} dataKey={'investment'}></Line>
-                                    <Line type={'monotone'} dataKey={'sell'} stroke='green'></Line>
+                                    <Line type={'monotone'}strokeWidth={2} dataKey={'investment'}></Line>
+                                    <Line type={'monotone'}strokeWidth={2} dataKey={'sell'} stroke='green'></Line>
                                     <XAxis dataKey={'month'}></XAxis>
                                     <Tooltip />
                                     <YAxis></YAxis>
@@ -78,8 +78,8 @@ const Dashboard = () => {
                                     <XAxis dataKey="month" />
                                     <YAxis />
                                     <Tooltip />
-                                    <Area type="monotone" dataKey="investment" stroke="#8884d8" fill="#8884d8" />
-                                    <Area type="monotone" dataKey="sell" stroke="green" fill="green" />
+                                    <Area type="monotone" dataKey="investment" stroke="#27ae60" fill="#27ae60" />
+                                    <Area type="monotone" dataKey="sell" stroke="#8884d8" fill="#8884d8" />
                                 </AreaChart>
                             </Col>
                         </Row>
