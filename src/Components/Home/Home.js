@@ -34,7 +34,7 @@ const Home = () => {
                     </Container>
                 </section>
                 <section>
-                    <div className="container text-center">
+                    <div className="container text-center review-items">
                         <h1>Customer Reviews: {customReview.length}</h1>
                         <div className='reviews mt-5'>
                             {
@@ -43,6 +43,7 @@ const Home = () => {
                                     review={review}></CustomReview>)
                             }
                         </div>
+                        <button className='mt-3 mb-5' onClick={() => navigate('/review')}>See All Reviews</button>
                     </div>
                 </section>
             </div>
