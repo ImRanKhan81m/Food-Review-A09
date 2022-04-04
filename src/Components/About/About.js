@@ -17,7 +17,7 @@ const About = () => {
                         </div>
                     </Col>
                     <Col lg='6' md='12'>
-                        <div className="details-container p-5">
+                        <div className="details-container p-3 p-lg-5  mt-4 mt-lg-0">
                             <h2><b>Name:</b> Kentucky Fried Chicken</h2>
                             <p><b>Category:</b> Meat,Spicy</p>
                             <p><b>Popular:</b> American</p>
@@ -26,9 +26,9 @@ const About = () => {
                             <p><b>Ingredients:</b> Chicken, Oil, Egg White, Flour, Brown Sugar, Salt.</p>
                             <p><b>Measure:</b> 1 whole, 2 quarts neutral frying, 1 1/2 cups , 1 tablespoon, 1 tablespoon, 1 tablespoon, 2 teaspoons, 1 teaspoon.</p>
                             
-                            <div className='home-details mt-5'>
+                            <div className='home-details mt-5 text-center'>
                                 <a target='blank' href="https://www.youtube.com/watch?v=PTUxCvCz8Bc"><button  onClick={() => navigate('/about')}>See Tutorial</button></a>
-                                <button className='mx-5'  onClick={() => navigate('/')}>Go Home</button>
+                                <button className='mx-5 mt-3'  onClick={() => navigate('/')}>Go Home</button>
                             </div>
                         </div>
                     </Col>
