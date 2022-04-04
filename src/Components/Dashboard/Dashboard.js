@@ -29,62 +29,69 @@ const Dashboard = () => {
                 <div className="chart-container py-5 mt-3">
                     <div className='mb-5 pb-5'>
                         <Row>
-                            <Col >
-                                <h2 className='text-center mb-5'>Month Wish Sell </h2>
-                                <LineChart width={600} height={400} data={data}>
-                                    <Line type={'monotone'} strokeWidth={2} dataKey={'sell'} stroke='green'></Line>
-                                    <XAxis dataKey={'month'}></XAxis>
-                                    <Tooltip />
-                                    <YAxis></YAxis>
-                                    <Legend />
-                                </LineChart>
+                            <Col lg='6' md='12' >
+                                <div className='rechart-first'>
+                                    <h2 className='text-center mb-lg-5 mb-md-5'>Month Wish Sell </h2>
+                                    <LineChart width={600} height={400} data={data}>
+                                        <Line type={'monotone'} strokeWidth={2} dataKey={'sell'} stroke='green'></Line>
+                                        <XAxis dataKey={'month'}></XAxis>
+                                        <Tooltip />
+                                        <YAxis></YAxis>
+                                        <Legend />
+                                    </LineChart>
+                                </div>
                             </Col>
-                            <Col >
-                                <h2 className='text-center mb-5'>Investment VS Sell </h2>
-                                <AreaChart
-                                    width={600}
-                                    height={400}
-                                    data={data}
-                                    margin={{
-                                        top: 10,
-                                        right: 30,
-                                        left: 0,
-                                        bottom: 0,
-                                    }}
-                                >
-                                    <CartesianGrid strokeDasharray="3 3" />
-                                    <XAxis dataKey="month" />
-                                    <YAxis />
-                                    <Tooltip />
-                                    <Area type="monotone" dataKey="investment" stroke="#27ae60" fill="#27ae60" />
-                                    <Area type="monotone" dataKey="sell" stroke="#8884d8" fill="#8884d8" />
-                                    <Legend />
-                                </AreaChart>
+                            <Col  lg='6' md='12'>
+                                <div className='rechart-first'>
+                                    <h2 className='text-center mb-lg-5 mb-md-5'>Investment VS Sell </h2>
+                                    <AreaChart
+                                        width={600}
+                                        height={400}
+                                        data={data}
+                                        margin={{
+                                            top: 10,
+                                            right: 30,
+                                            left: 0,
+                                            bottom: 0,
+                                        }}
+                                    >
+                                        <CartesianGrid strokeDasharray="3 3" />
+                                        <XAxis dataKey="month" />
+                                        <YAxis />
+                                        <Tooltip />
+                                        <Area type="monotone" dataKey="investment" stroke="#27ae60" fill="#27ae60" />
+                                        <Area type="monotone" dataKey="sell" stroke="#8884d8" fill="#8884d8" />
+                                        <Legend />
+                                    </AreaChart>
+                                </div>
                             </Col>
                         </Row>
                     </div>
                     <div>
                         <Row>
-                            <Col >
-                                <h2 className='text-center mb-5'>Investment VS Revenue </h2>
-                                <BarChart width={600} height={400} data={data}>
-                                    <Bar dataKey="revenue" stackId="a" fill="#8884d8" />
-                                    <Bar dataKey="investment" stackId="a" fill="#82ca9d" />
-                                    <XAxis dataKey={'month'}></XAxis>
-                                    <Tooltip />
-                                    <Legend />
-                                    <YAxis></YAxis>
-                                </BarChart>
+                            <Col  lg='6' md='12'>
+                                <div className='rechart-first'>
+                                    <h2 className='text-center mb-lg-5 mb-md-5'>Investment VS Revenue </h2>
+                                    <BarChart width={600} height={400} data={data}>
+                                        <Bar dataKey="revenue" stackId="a" fill="#8884d8" />
+                                        <Bar dataKey="investment" stackId="a" fill="#82ca9d" />
+                                        <XAxis dataKey={'month'}></XAxis>
+                                        <Tooltip />
+                                        <Legend />
+                                        <YAxis></YAxis>
+                                    </BarChart>
+                                </div>
 
                             </Col>
-                            <Col >
-                                <h2 className='text-center mb-5'>Investment VS Sell </h2>
-                                <PieChart width={600} height={400}>
-                                    <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={90} fill="#8884d8" />
-                                    <Pie data={data2} dataKey="sell" cx="50%" cy="50%" innerRadius={110} outerRadius={150} fill="#82ca9d" label />
-                                    <Legend />
-                                    <Tooltip />
-                                </PieChart>
+                            <Col  lg='6' md='12'>
+                                <div className='rechart-second'>
+                                    <h2 className='text-center mb-5'>Investment VS Sell </h2>
+                                    <PieChart width={600} height={400}>
+                                        <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={90} fill="#8884d8" />
+                                        <Pie data={data2} dataKey="sell" cx="50%" cy="50%" innerRadius={110} outerRadius={150} fill="#82ca9d" label />
+                                        <Tooltip />
+                                    </PieChart>
+                                </div>
                             </Col>
                         </Row>
                     </div>

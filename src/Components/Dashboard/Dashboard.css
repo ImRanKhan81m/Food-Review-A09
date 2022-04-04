@@ -1,3 +1,54 @@
-.chart-container h2{
-    color:#192a56 ;
+.chart-container h2 {
+    color: #192a56;
+}
+
+@media only screen and (max-width: 650px) {
+    .rechart-first .recharts-surface {
+        width: 500px;
+    }
+
+    .rechart-first .recharts-wrapper {
+        width: 300px !important;
+    }
+
+    .rechart-first .recharts-legend-wrapper {
+        width: 300px !important;
+    }
+    .rechart-second .recharts-surface {
+        width: 500px !important;
+    }
+    .rechart-second .recharts-wrapper {
+        width: 400px !important;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .rechart-first .recharts-surface {
+        width: 400px;
+    }
+    .rechart-first .recharts-wrapper {
+        width: 200px !important;
+    }
+
+    .rechart-first .recharts-default-legend {
+        width: 300px;
+    }
+    .rechart-second .recharts-surface {
+        width: 300px !important;
+    }
+    .rechart-second .recharts-wrapper {
+        width: 200px !important;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .rechart-first .recharts-surface {
+        width: 330px;
+    }
+    .rechart-first .recharts-wrapper {
+        width: 300px !important;
+    }
+
+    .rechart-first .recharts-default-legend {
+        width: 300px;
+    }
 }
