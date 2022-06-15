@@ -13,7 +13,7 @@ const Home = () => {
     const navigate = useNavigate();
     return (
         <>
-            <div>
+            <div className='pt-5'>
                 <section>
                     <Container>
                         <Row>

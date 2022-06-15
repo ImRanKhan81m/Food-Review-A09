@@ -12,12 +12,12 @@
 
 .items .item {
     margin-left: 23px;
-    font-size: 22px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 400;
     text-decoration: none;
 }
 .icon{
     border-radius: 50%;
     margin-left: 5px;
     color: #192a56;
-} 
+}

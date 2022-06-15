@@ -26,8 +26,8 @@ const Dashboard = () => {
         <div>
 
             <div className="container">
-                <div className="chart-container py-5 mt-3">
-                    <div className='mb-5 pb-5'>
+                <div className="chart-container py-5 mt-5">
+                    <div className='mb-5 pb-5 mt-5'>
                         <Row>
                             <Col lg='6' md='12' >
                                 <div className='rechart-first'>

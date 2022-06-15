@@ -3,9 +3,9 @@ import { Col, Row } from 'react-bootstrap';
 
 const Blog = () => {
     return (
-        <div>
+        <div style={{minHeight:'86vh'}} className=' mt-5 py-5'>
             <div className="container">
-                <Row className=' mt-5'>
+                <Row>
                     <Col lg='6' md='12'>
                         <div className="first-question p-lg-5 p-2">
                             <h3>1) What is Context Api?</h3>

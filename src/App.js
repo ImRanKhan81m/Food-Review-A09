@@ -4,9 +4,11 @@ import './App.css';
 import About from './Components/About/About';
 import Blog from './Components/Blogs/Blog';
 import Dashboard from './Components/Dashboard/Dashboard';
+import Footer from './Components/Footer/Footer';
 // import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
+import Login from './Components/Login/Login';
 import NotFound from './Components/NotFound/NotFound';
 import Reviews from './Components/Reviews/Reviews';
 
@@ -21,9 +23,10 @@ function App() {
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/about' element={<About />} />
+        <Route path='/login' element={<Login />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }
